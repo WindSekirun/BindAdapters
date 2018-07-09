@@ -24,7 +24,7 @@ object TextViewBindAdapter {
         when (style) {
             "bold" -> setTypeface(null, Typeface.BOLD)
             "italic" -> setTypeface(null, Typeface.ITALIC)
-            "bold|italic" -> setTypeface(null, Typeface.BOLD_ITALIC)
+            "bolditalic" -> setTypeface(null, Typeface.BOLD_ITALIC)
             else -> setTypeface(null, Typeface.NORMAL)
         }
     }

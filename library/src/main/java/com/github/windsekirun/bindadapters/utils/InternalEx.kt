@@ -14,7 +14,7 @@ import android.view.View
  */
 
 /**
- * remove type implicit such ListenerUtil.trackListener<ViewPager.OnPageChangeListener>
+ * remove implicit type such as ListenerUtil.trackListener<ViewPager.OnPageChangeListener>
  */
 internal fun <T> trackListener(view: View, listener: T?, listenerResourceId: Int): T? =
         ListenerUtil.trackListener(view, listener!!, listenerResourceId)

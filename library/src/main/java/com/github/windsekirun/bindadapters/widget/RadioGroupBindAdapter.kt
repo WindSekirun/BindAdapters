@@ -14,5 +14,4 @@ import android.widget.RadioGroup
 @BindingMethods(
         BindingMethod(type = RadioGroup::class, attribute = "android:onRadioChanged", method = "setOnCheckedChangeListener")
 )
-object RadioGroupBindAdapter {
-}
+object RadioGroupBindAdapter
