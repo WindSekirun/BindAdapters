@@ -1,6 +1,6 @@
 ## BindAdapters [![](https://jitpack.io/v/WindSekirun/BindAdapters.svg)](https://jitpack.io/#WindSekirun/BindAdapters) [![CircleCI](https://circleci.com/gh/WindSekirun/BindAdapters.svg?style=svg)](https://circleci.com/gh/WindSekirun/BindAdapters)
 
-```@BindingAdapter``` set for Android Databinding library
+```@BindingAdapter``` set for Android Databinding library, written in Kotlin.
 
 ### Usages
 
