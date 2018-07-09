@@ -32,7 +32,7 @@ dependencies {
 |Spinner|app:onItemSelected|@{viewModel::onItemSelected}|FALSE|item: Any?|
 |Spinner|app:selectedValue|@={viewModel.mSelectedValue}|TRUE| |
 |TextView|android:onEditorAction|@{viewModel::onEditorAction}|FALSE| |
-|TextView|android:textStyle|@{viewModel.mTextStyleBold ? "bold" : "normal"}|FALSE|style: String ("bold", "italic", "bolditalic", "normal") |
+|TextView|android:textStyle|@{viewModel.mTextStyleBold ? "bold" : "normal"}|FALSE|style: String ("bold", "italic", "bold\|italic", "normal") |
 |TextView|android:text|@{viewModel.mText}|FALSE|value: (Float, Double, Int, Long, Boolean)|
 |View|android:onFocusChanged|@{viewModel::onFocusChanged}|FALSE|view: View, hasFocus: Boolean|
 |View|android:selected|@={viewModel::mSelected}|TRUE||
