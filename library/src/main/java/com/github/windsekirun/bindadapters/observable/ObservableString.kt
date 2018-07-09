@@ -73,11 +73,5 @@ class ObservableString : ObservableField<String>, Parcelable, Serializable {
         fun equals(a: Any?, b: Any?): Boolean {
             return a == b || a != null && a == b
         }
-
-        @BindingConversion
-        @JvmStatic
-        open fun convertToString(s: ObservableString): String? {
-            return s.get()
-        }
     }
 }
