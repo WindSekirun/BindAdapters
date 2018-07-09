@@ -24,24 +24,24 @@ dependencies {
 ### Available feature
 
 |Type|Attribute|Expressions|Inverse|Args|
-|:---:|:---:|:---:|:---:|:---:|
-|ImageView|app:imageUrl|@{viewModel.mImageUrl}|FALSE|uri: Uri|
-|ImageView|app:cirlceImageUrl|@{viewModel.mImageUrl}|FALSE|uri: Uri|
-|RadioGroup|android:onRadioChanged|@{viewModel::onRadioChange}|FALSE|group: RadioGroup, checkedId: Int|
-|Spinner|app:entries|@{viewModel.mEntries}|FALSE|@Nullable entries: List<String>|
-|Spinner|app:onItemSelected|@{viewModel::onItemSelected}|FALSE|item: Any?|
-|Spinner|app:selectedValue|@={viewModel.mSelectedValue}|TRUE| |
-|TextView|android:onEditorAction|@{viewModel::onEditorAction}|FALSE| |
-|TextView|android:textStyle|@{viewModel.mTextStyleBold ? "bold" : "normal"}|FALSE|style: String ("bold", "italic", "bold\|italic", "normal") |
-|TextView|android:text|@{viewModel.mText}|FALSE|value: (Float, Double, Int, Long, Boolean)|
-|View|android:onFocusChanged|@{viewModel::onFocusChanged}|FALSE|view: View, hasFocus: Boolean|
-|View|android:selected|@={viewModel::mSelected}|TRUE||
-|ViewPager|android:offscreenPageLimit|@{viewModel.mOffscreenPageLimit}|FALSE|limit:Int|
-|ViewPager|android:adapter|@{viewModel.mAdapter}|FALSE|adapter: PagerAdapter|
-|ViewPager|android:currentPage|@={viewModel.mCurrentPage}|TRUE||
-|ViewPager|android:onPageScrolled|@{viewModel::onPageScrolled}|FALSE|position: Int, positionOffset: Float, positionOffsetPixels: Int|
-|ViewPager|android:onPageSelected|@{viewModel::onPageSelected}|FALSE|position: Int|
-|ViewPager|android:onPageScrollStateChanged|@{viewModel::onPageScrollStateChanged}|FALSE|state: Int|
+|:---:|:---:|:---|:---:|:---|
+|ImageView|app:imageUrl|@{viewModel.mImageUrl}|X|uri: Uri|
+|ImageView|app:cirlceImageUrl|@{viewModel.mImageUrl}|X|uri: Uri|
+|RadioGroup|android:onRadioChanged|@{viewModel::onRadioChange}|X|group: RadioGroup, checkedId: Int|
+|Spinner|app:entries|@{viewModel.mEntries}|X|@Nullable entries: List<String>|
+|Spinner|app:onItemSelected|@{viewModel::onItemSelected}|X|item: Any?|
+|Spinner|app:selectedValue|@={viewModel.mSelectedValue}|O| |
+|TextView|android:onEditorAction|@{viewModel::onEditorAction}|X| |
+|TextView|android:textStyle|@{viewModel.mTextStyleBold ? "bold" : "normal"}|X|style: String ("bold", "italic", "bold\|italic", "normal") |
+|TextView|android:text|@{viewModel.mText}|X|value: (Float, Double, Int, Long, Boolean)|
+|View|android:onFocusChanged|@{viewModel::onFocusChanged}|X|view: View, hasFocus: Boolean|
+|View|android:selected|@={viewModel::mSelected}|O||
+|ViewPager|android:offscreenPageLimit|@{viewModel.mOffscreenPageLimit}|X|limit:Int|
+|ViewPager|android:adapter|@{viewModel.mAdapter}|X|adapter: PagerAdapter|
+|ViewPager|android:currentPage|@={viewModel.mCurrentPage}|O||
+|ViewPager|android:onPageScrolled|@{viewModel::onPageScrolled}|X|position: Int, positionOffset: Float, positionOffsetPixels: Int|
+|ViewPager|android:onPageSelected|@{viewModel::onPageSelected}|X|position: Int|
+|ViewPager|android:onPageScrollStateChanged|@{viewModel::onPageScrollStateChanged}|X|state: Int|
 
 ### License
 ```
