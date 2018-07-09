@@ -75,7 +75,8 @@ class ObservableString : ObservableField<String>, Parcelable, Serializable {
         }
 
         @BindingConversion
-        fun convertToString(s: ObservableString): String? {
+        @JvmStatic
+        open fun convertToString(s: ObservableString): String? {
             return s.get()
         }
     }
