@@ -1,7 +1,7 @@
 package com.github.windsekirun.bindadapters.widget
 
-import android.databinding.BindingMethod
-import android.databinding.BindingMethods
+import androidx.databinding.BindingMethod
+import androidx.databinding.BindingMethods
 import android.widget.RadioGroup
 
 /**

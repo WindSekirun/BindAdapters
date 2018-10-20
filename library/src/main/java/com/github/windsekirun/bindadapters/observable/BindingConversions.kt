@@ -1,6 +1,6 @@
 package com.github.windsekirun.bindadapters.observable
 
-import android.databinding.BindingConversion
+import androidx.databinding.BindingConversion
 
 /**
  * BindAdapters
