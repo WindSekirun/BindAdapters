@@ -1,7 +1,6 @@
 package com.github.windsekirun.bindadapters.observable
 
-import android.databinding.BindingConversion
-import android.databinding.ObservableField
+import androidx.databinding.ObservableField
 import android.os.Parcel
 import android.os.Parcelable
 

@@ -11,6 +11,6 @@ import androidx.databinding.BindingConversion
  */
 
 @BindingConversion
-fun convertToString(s: ObservableString): String? {
+fun convertToString(s: ObservableString): String {
     return s.get()
 }
