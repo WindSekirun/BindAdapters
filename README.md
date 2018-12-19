@@ -17,7 +17,7 @@ allprojects {
 *app/build.gradle*
 ```
 dependencies {
-    implementation 'com.github.WindSekirun:BindAdapters:0.1.1'
+    implementation 'com.github.WindSekirun:BindAdapters:0.2.0-androidx'
 }
 ```
 
@@ -28,6 +28,7 @@ dependencies {
 |ImageView|app:imageUrl|@{viewModel.mImageUrl}|X|uri: Uri|
 |ImageView|app:cirlceImageUrl|@{viewModel.mImageUrl}|X|uri: Uri|
 |RadioGroup|android:onRadioChanged|@{viewModel::onRadioChange}|X|group: RadioGroup, checkedId: Int|
+|RadioGroup|app:checkedPosition|@={viewModel.mCheckedPosition}|O||
 |Spinner|app:entries|@{viewModel.mEntries}|X|@Nullable entries: List<String>|
 |Spinner|app:onItemSelected|@{viewModel::onItemSelected}|X|item: Any?|
 |Spinner|app:selectedValue|@={viewModel.mSelectedValue}|O| |

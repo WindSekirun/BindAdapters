@@ -1,8 +1,8 @@
 package com.github.windsekirun.bindadapters.widget
 
-import android.databinding.BindingAdapter
-import android.databinding.BindingMethod
-import android.databinding.BindingMethods
+import androidx.databinding.BindingAdapter
+import androidx.databinding.BindingMethod
+import androidx.databinding.BindingMethods
 import android.graphics.Typeface
 import android.widget.TextView
 

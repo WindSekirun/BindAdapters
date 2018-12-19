@@ -2,7 +2,7 @@
 
 package com.github.windsekirun.bindadapters.utils
 
-import android.databinding.adapters.ListenerUtil
+import androidx.databinding.adapters.ListenerUtil
 import android.view.View
 
 /**
