@@ -1,7 +1,7 @@
 package com.github.windsekirun.bindadapters.widget
 
-import android.databinding.*
-import android.support.v4.view.ViewPager
+import androidx.databinding.*
+import androidx.viewpager.widget.ViewPager
 import com.github.windsekirun.bindadapters.R
 import com.github.windsekirun.bindadapters.utils.trackListener
 
@@ -40,9 +40,9 @@ object ViewPagerBindAdapter {
     @JvmStatic
     @BindingAdapter(value = ["android:onPageScrolled", "android:onPageSelected", "android:onPageScrollStateChanged", "android:currentPageAttrChanged"], requireAll = false)
     fun ViewPager.onSetAdapter(scrolled: OnPageScrolled?,
-                               selected: OnPageSelected?,
-                               scrollStateChanged: OnPageScrollStateChanged?,
-                               currentPageAttrChanged: InverseBindingListener?) {
+                                                         selected: OnPageSelected?,
+                                                         scrollStateChanged: OnPageScrollStateChanged?,
+                                                         currentPageAttrChanged: InverseBindingListener?) {
 
         val newValue: ViewPager.OnPageChangeListener?
         if (scrolled == null && selected == null && scrollStateChanged == null && currentPageAttrChanged == null) {

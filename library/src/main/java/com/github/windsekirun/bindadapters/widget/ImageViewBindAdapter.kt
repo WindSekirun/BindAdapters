@@ -1,6 +1,6 @@
 package com.github.windsekirun.bindadapters.widget
 
-import android.databinding.BindingAdapter
+import androidx.databinding.BindingAdapter
 import android.net.Uri
 import android.widget.ImageView
 import com.bumptech.glide.Glide

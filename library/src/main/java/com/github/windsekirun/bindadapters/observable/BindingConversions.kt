@@ -1,6 +1,6 @@
 package com.github.windsekirun.bindadapters.observable
 
-import android.databinding.BindingConversion
+import androidx.databinding.BindingConversion
 
 /**
  * BindAdapters
@@ -11,6 +11,6 @@ import android.databinding.BindingConversion
  */
 
 @BindingConversion
-fun convertToString(s: ObservableString): String? {
+fun convertToString(s: ObservableString): String {
     return s.get()
 }

@@ -1,7 +1,6 @@
 package com.github.windsekirun.bindadapters.observable
 
-import android.databinding.BindingConversion
-import android.databinding.ObservableField
+import androidx.databinding.ObservableField
 import android.os.Parcel
 import android.os.Parcelable
 
@@ -37,8 +36,8 @@ class ObservableString : ObservableField<String>, Parcelable, Serializable {
         this.mValue = value
     }
 
-    override fun get(): String? {
-        return this.mValue
+    override fun get(): String {
+        return this.mValue ?: ""
     }
 
     override fun set(value: String) {
@@ -60,6 +59,7 @@ class ObservableString : ObservableField<String>, Parcelable, Serializable {
     companion object {
         internal const val serialVersionUID = 1L
 
+        @JvmField
         val CREATOR: Parcelable.Creator<ObservableString> = object : Parcelable.Creator<ObservableString> {
             override fun createFromParcel(source: Parcel): ObservableString {
                 return ObservableString(source.readString())
