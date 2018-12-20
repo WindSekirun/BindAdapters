@@ -17,7 +17,7 @@ allprojects {
 *app/build.gradle*
 ```
 dependencies {
-    implementation 'com.github.WindSekirun:BindAdapters:0.2.0-androidx'
+    implementation 'com.github.WindSekirun:BindAdapters:0.2.1-androidx'
 }
 ```
 

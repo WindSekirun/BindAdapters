@@ -56,6 +56,8 @@ class ObservableString : ObservableField<String>, Parcelable, Serializable {
         dest.writeString(this.mValue)
     }
 
+    fun propertyChanges() = RxObservableString(this)
+
     companion object {
         internal const val serialVersionUID = 1L
 
