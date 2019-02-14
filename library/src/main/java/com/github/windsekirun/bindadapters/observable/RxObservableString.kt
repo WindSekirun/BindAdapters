@@ -1,3 +1,5 @@
+@file:JvmName("RxObservableString")
+
 package com.github.windsekirun.bindadapters.observable
 
 
