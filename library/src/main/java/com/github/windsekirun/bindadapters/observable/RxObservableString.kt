@@ -1,7 +1,4 @@
-@file:JvmName("RxObservableString")
-
 package com.github.windsekirun.bindadapters.observable
-
 
 import io.reactivex.Observable
 import io.reactivex.Observer
@@ -39,6 +36,9 @@ class RxObservableString(private val observableString: ObservableString) : Obser
             observableString.removeOnPropertyChangedCallback(onPropertyChangedCallback)
         }
     }
-}
 
-fun ObservableString.propertyChanges() = RxObservableString(this)
+    companion object {
+        @JvmStatic
+        fun propertyChanges(target: ObservableString) = RxObservableString(target)
+    }
+}

@@ -1,9 +1,8 @@
 package com.github.windsekirun.bindadapters.observable
 
-import androidx.databinding.ObservableField
 import android.os.Parcel
 import android.os.Parcelable
-
+import androidx.databinding.ObservableField
 import java.io.Serializable
 
 /**
@@ -60,6 +59,8 @@ class ObservableString : ObservableField<String>, Parcelable, Serializable {
 
     companion object {
         internal const val serialVersionUID = 1L
+
+        fun ObservableString.propertyChanges() = RxObservableString(this)
 
         @JvmField
         val CREATOR: Parcelable.Creator<ObservableString> = object : Parcelable.Creator<ObservableString> {
